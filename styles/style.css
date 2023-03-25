@@ -27,8 +27,7 @@ body::before {
   z-index: -10;
 }
 
-header
-{
+header {
   display: flex;
 }
 
@@ -89,7 +88,7 @@ nav li a {
 
 nav li a:hover {
   /* color: #914702; */
-   color: #990038;
+  color: #990038;
 }
 
 nav button {
@@ -106,7 +105,7 @@ nav button {
 
 nav button:hover {
   /* background-color: #cb6200; */
-  background-color:  #ff006f;
+  background-color: #ff006f;
 }
 
 main {
@@ -236,7 +235,7 @@ main .title p {
   width: 340px;
   overflow: hidden;
   /* background-color: #042a52; */
-  background-color:#990038;
+  background-color: #990038;
   position: relative;
   cursor: pointer;
   box-shadow: 0px 0px 132px -100px rgba(33, 110, 205, 0.75);
@@ -623,4 +622,72 @@ main .title p {
 #about p b {
   font-size: 2rem;
   line-height: 150%;
+}
+
+.reach-us {
+  padding: 2rem;
+  color: #fff;
+}
+
+.reach-us-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.reach-us-heading {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2.4rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #cfc547;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 10px 10px 25px rgb(81, 67, 21), -10px 10px 25px rgb(81, 67, 21),
+    -10px -10px 25px rgb(81, 67, 21), 10px -10px 25px rgb(81, 67, 21);
+}
+
+.map {
+  width: 94vw;
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icon {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa {
+  font-size: 1.4rem;
+}
+.coc {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
 }
