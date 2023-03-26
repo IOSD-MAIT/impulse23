@@ -215,7 +215,10 @@ section .desc {
   color: #ffffff8a;
 }
 
-section button {
+section button,
+section .btn {
+  display: block;
+  width: fit-content;
   margin-top: 1rem;
   margin-right: 0.5rem;
   padding: 1rem 3rem;
@@ -227,9 +230,11 @@ section button {
   cursor: pointer;
   margin-bottom: 3rem;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
-section button:hover {
+section button:hover,
+section .btn:hover {
   background: #ff006f;
   border: 1px solid #ff006f;
 }
