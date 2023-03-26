@@ -234,11 +234,6 @@ section button:hover {
   border: 1px solid #ff006f;
 }
 
-.faq-heading
-{
+.faq-heading {
   display: flex;
-}
-.faq-heading div
-{
-  
 }
