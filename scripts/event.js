@@ -31,6 +31,7 @@ menuToggle[0].addEventListener('click', function() {
 	qualSelector = this;
 
 	qualContent.classList.add('hide');
+	qualContent.classList.maxHeight = 0;
 	overview.classList.remove('hide');
 	qualContent = overview;
 });
@@ -41,6 +42,7 @@ menuToggle[1].addEventListener('click', function() {
 	qualSelector = this;
 
 	qualContent.classList.add('hide');
+	qualContent.classList.maxHeight = 0;
 	themes.classList.remove('hide');
 	qualContent = themes;
 });
@@ -51,6 +53,7 @@ menuToggle[2].addEventListener('click', function() {
 	qualSelector = this;
 
 	qualContent.classList.add('hide');
+	qualContent.classList.maxHeight = 0;
 	schedule.classList.remove('hide');
 	qualContent = schedule;
 });
@@ -61,6 +64,7 @@ menuToggle[3].addEventListener('click', function() {
 	qualSelector = this;
 
 	qualContent.classList.add('hide');
+	qualContent.classList.maxHeight = 0;
 	prizes.classList.remove('hide');
 	qualContent = prizes;
 });

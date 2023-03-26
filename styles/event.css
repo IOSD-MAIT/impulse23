@@ -72,13 +72,13 @@ main h3 {
 }
 
 .section {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
+  margin-top: 2rem;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .overview-main {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   column-gap: 24px;
@@ -89,6 +89,7 @@ main h3 {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .main-content img {
@@ -314,6 +315,7 @@ main h3 {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
+  justify-content: center;
   /* background-color: #000; */
   position: relative;
 }
@@ -450,3 +452,45 @@ main h3 {
 .card:last-child:hover div {
   scale: 1.1;
 } */
+
+.schedule-main-content
+{
+  background-color: #000;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+.schedule-card
+{
+  background-color: rgb(28, 28, 28);
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.schedule-card .date 
+{
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(87, 87, 87);
+  border-radius: 16px;
+  padding: 10px 16px;
+}
+
+.schedule-card .date svg
+{
+  height: 24px;
+  width: 24px;
+}
+
+.schedule-card .date p
+{
+  font-size: 20px;
+  letter-spacing: 0.12em;
+}
