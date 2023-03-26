@@ -202,3 +202,18 @@ const explore = document.querySelector('.explore-more');
 explore.addEventListener('click', function() {
 	window.location.href = './pages/events.html';
 });
+
+const hackmait = document.getElementById('hackmait');
+hackmait.addEventListener('click', function() {
+	window.location.href = './pages/events/hackmait.html';
+});
+
+const valo = document.getElementById('valo');
+valo.addEventListener('click', function() {
+	window.location.href = './pages/events/valo.html';
+});
+
+const aiml = document.getElementById('aiml');
+aiml.addEventListener('click', function() {
+	window.location.href = './pages/events/aiml.html';
+});
