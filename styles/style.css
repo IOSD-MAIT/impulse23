@@ -209,9 +209,11 @@ main .title p {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-top: 4rem;
   /* background-color: #000; */
   padding-left: 5rem;
   position: relative;
+  flex-wrap: wrap;
 }
 
 #events::before {
@@ -585,21 +587,6 @@ main .title p {
   margin-top: 10px;
 }
 
-@media (max-width: 825px) {
-  .clock-container {
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .clock-col + .clock-col {
-    margin-top: 20px;
-  }
-  .clock-col:before,
-  .clock-col:after {
-    display: none !important;
-  }
-}
-
 #about {
   color: white;
   text-align: center;
@@ -698,6 +685,7 @@ main .title p {
   gap: 2rem;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
   align-items: center;
   background-color: rgba(86, 86, 86, 0.227);
   backdrop-filter: blur(10px) saturate(200%);
@@ -740,4 +728,106 @@ main .title p {
   color: white;
   text-align: center;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+  .address h2 {
+    font-size: 1.25rem;
+  }
+  .address h3 {
+    font-size: 1rem;
+  }
+  .contact-info h2 {
+    font-size: 1.25rem;
+  }
+  .contact-info h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .card {
+    height: 400px !important;
+    width: 280px !important;
+  }
+  #about {
+    padding: 2rem;
+    min-width: 715px;
+  }
+  #about h2 {
+    font-size: 2rem;
+  }
+  #about p {
+    font-size: 0.9rem;
+  }
+  .address h2 {
+    font-size: 1rem;
+  }
+  .address h3 {
+    font-size: 0.75rem;
+  }
+  .contact-info h2 {
+    font-size: 1rem;
+  }
+  .contact-info h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 825px) {
+  .clock-container {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .clock-col + .clock-col {
+    margin-top: 20px;
+  }
+  .clock-col:before,
+  .clock-col:after {
+    display: none !important;
+  }
+  .title {
+    min-width: 630px;
+    margin-left: 2rem !important;
+    padding: 20px;
+  }
+  main .title h3 {
+    font-size: 2rem;
+  }
+  main .title h1 {
+    font-size: 4rem;
+  }
+  main .title p {
+    font-size: 1.3rem;
+  }
+  #events {
+    flex-direction: column;
+    align-items: center;
+    min-width: 815px;
+  }
+  #timer {
+    width: 765px;
+  }
+  #past {
+    width: 800px;
+  }
+  .address h2 {
+    font-size: 0.75rem;
+  }
+  .address h3 {
+    font-size: 0.6rem;
+  }
+  .contact-info h2 {
+    font-size: 0.75rem;
+  }
+  .contact-info h3 {
+    font-size: 0.6rem;
+  }
+  .reach-us {
+    min-width: 800px;
+  }
+  .social {
+    width: 825px;
+  }
 }
