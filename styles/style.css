@@ -213,7 +213,7 @@ main .title p {
   /* background-color: #000; */
   padding-left: 5rem;
   position: relative;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 #events::before {
