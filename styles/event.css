@@ -1,6 +1,6 @@
-:root{
-  --btn:#ff006f;
-  --sec-btn:#ff006f2a;
+:root {
+  --btn: #ff006f;
+  --sec-btn: #ff006f2a;
 }
 
 main {
@@ -170,6 +170,117 @@ main h3 {
   transition: 0.2s ease-in-out;
 }
 
+.rules-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rules-heading h2 {
+  font-size: 35px;
+}
+
+.rules-heading div {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.402);
+}
+
+.rules {
+  padding-left: 0.5;
+}
+
+.rules h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: rgb(202, 202, 202);
+}
+
+.rules ul {
+  list-style: none;
+  border-left: 2px dashed rgb(174, 174, 174);
+  color: rgb(180, 190, 192);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  letter-spacing: 0.12rem;
+  line-height: 32px;
+}
+
+.rules li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  display: block;
+  border-radius: 100px;
+  border: 3px solid var(--btn);
+  outline: 1px solid var(--sec-btn);
+  transform: translateY(-50%);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.heading h2 {
+  font-size: 40px;
+}
+
+.heading div {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.402);
+}
+
+.head-card-cont {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.head-card {
+  text-align: center;
+  color: white;
+  /* background-color: rgb(28, 28, 28);
+  border: 1px solid #ffffff26; */
+  padding: 2rem;
+  border-radius: 20px;
+  width: fit-content;
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(255, 236, 255, 0.101);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.head-card h3 {
+  color: rgba(255, 255, 255, 0.505);
+}
+
+.head-card img {
+  width: 250px;
+  /* height: 400px; */
+  aspect-ratio: 3 / 4;
+  margin-bottom: 0.5rem;
+}
+
+.rules li {
+  padding: 0.5rem 1.5rem;
+  position: relative;
+}
+
 .faq-heading {
   display: flex;
   justify-content: center;
@@ -274,8 +385,7 @@ main h3 {
   margin-bottom: 1rem;
 }
 
-.more-events-cont
-{
+.more-events-cont {
   margin-top: 2rem;
 }
 
@@ -297,8 +407,7 @@ main h3 {
   background-color: rgba(255, 255, 255, 0.402);
 }
 
-.more-events-heading a
-{
+.more-events-heading a {
   text-decoration: none;
   border: 2px solid #ff006f;
   color: #fff;
@@ -306,8 +415,7 @@ main h3 {
   padding: 12px;
 }
 
-.more-events-heading a:hover
-{
+.more-events-heading a:hover {
   background-color: var(--sec-btn);
 }
 
@@ -453,8 +561,7 @@ main h3 {
   scale: 1.1;
 } */
 
-.schedule-main-content
-{
+.schedule-main-content {
   background-color: #000;
   border-radius: 20px;
   padding: 2rem;
@@ -462,8 +569,7 @@ main h3 {
   margin-bottom: 3rem;
 }
 
-.schedule-card
-{
+.schedule-card {
   background-color: rgb(28, 28, 28);
   margin-bottom: 4rem;
   display: flex;
@@ -472,8 +578,7 @@ main h3 {
   border-radius: 20px;
 }
 
-.schedule-card .date 
-{
+.schedule-card .date {
   display: flex;
   column-gap: 10px;
   justify-content: center;
@@ -483,14 +588,12 @@ main h3 {
   padding: 10px 16px;
 }
 
-.schedule-card .date svg
-{
+.schedule-card .date svg {
   height: 24px;
   width: 24px;
 }
 
-.schedule-card .date p
-{
+.schedule-card .date p {
   font-size: 20px;
   letter-spacing: 0.12em;
 }
