@@ -209,7 +209,6 @@ main .title p {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 4rem;
   /* background-color: #000; */
   padding-left: 5rem;
   position: relative;

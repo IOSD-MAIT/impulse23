@@ -1,8 +1,3 @@
-:root{
-  --btn:#ff006f;
-  --sec-btn:#ff006f2a;
-}
-
 main {
   position: relative;
   padding: 3rem 0;
@@ -170,6 +165,117 @@ main h3 {
   transition: 0.2s ease-in-out;
 }
 
+.rules-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rules-heading h2 {
+  font-size: 35px;
+}
+
+.rules-heading div {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.402);
+}
+
+.rules {
+  padding-left: 0.5;
+}
+
+.rules h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: rgb(202, 202, 202);
+}
+
+.rules ul {
+  list-style: none;
+  border-left: 2px dashed rgb(174, 174, 174);
+  color: rgb(180, 190, 192);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  letter-spacing: 0.12rem;
+  line-height: 32px;
+}
+
+.rules li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  display: block;
+  border-radius: 100px;
+  border: 3px solid var(--btn);
+  outline: 1px solid var(--sec-btn);
+  transform: translateY(-50%);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.heading h2 {
+  font-size: 40px;
+}
+
+.heading div {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.402);
+}
+
+.head-card-cont {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.head-card {
+  text-align: center;
+  color: white;
+  /* background-color: rgb(28, 28, 28);
+  border: 1px solid #ffffff26; */
+  padding: 2rem;
+  border-radius: 20px;
+  width: fit-content;
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(255, 236, 255, 0.101);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.head-card h3 {
+  color: rgba(255, 255, 255, 0.505);
+}
+
+.head-card img {
+  width: 250px;
+  /* height: 400px; */
+  aspect-ratio: 3 / 4;
+  margin-bottom: 0.5rem;
+}
+
+.rules li {
+  padding: 0.5rem 1.5rem;
+  position: relative;
+}
+
 .faq-heading {
   display: flex;
   justify-content: center;
@@ -271,226 +377,16 @@ main h3 {
 }
 
 .ques-cont.open p {
-  margin-bottom: 1rem;
-}
-
-.more-events-cont
-{
-  margin-top: 2rem;
-}
-
-.more-events-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.more-events-heading h2 {
-  font-size: 35px;
-}
-
-.more-events-heading div {
-  flex: 1;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.402);
-}
-
-.more-events-heading a
-{
-  text-decoration: none;
-  border: 2px solid #ff006f;
-  color: #fff;
-  border-radius: 15px;
-  padding: 12px;
-}
-
-.more-events-heading a:hover
-{
-  background-color: var(--sec-btn);
-}
-
-#events {
-  display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* background-color: #000; */
-  position: relative;
-}
-
-/* #events::before {
-  content: "";
-  position: absolute;
-  top: -4rem;
-  height: 4rem;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    var(--primaryBackgroundClr)
-  );
-} */
-
-#events .card {
-  border-radius: 20px;
-  height: 400px;
-  width: 340px;
-  overflow: hidden;
-  /* background-color: #042a52; */
-  background-color: #990038;
-  position: relative;
-  cursor: pointer;
-  box-shadow: 0px 0px 132px -100px rgba(33, 110, 205, 0.75);
-  transition: 0.4s ease-in-out;
-}
-
-#events .card:hover {
-  /* box-shadow: 0px 0px 132px 10px rgba(33, 110, 205, 0.75); */
-  box-shadow: 0px 0px 132px 10px #990038;
-}
-
-#events .card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   display: block;
-  background: linear-gradient(
-    180deg,
-    rgba(218, 57, 43, 0),
-    var(--secondaryBackgroundClr)
-  );
-  opacity: 1;
-  transition: 0.4s ease-in-out;
+  max-height: 1000px;
+  /* animation: open .2s */
 }
 
-#events .card:first-child::after {
-  background: linear-gradient(
-    180deg,
-    rgba(218, 57, 43, 0),
-    var(--secondaryBackgroundClr)
-  );
-}
-
-#events .card:first-child:hover {
-  box-shadow: 0px 0px 132px 10px rgba(33, 110, 205, 0.75);
-}
-#events .card:last-child:hover {
-  box-shadow: 0px 0px 132px 10px rgba(33, 110, 205, 0.75);
-}
-
-#events .card:nth-child(2)::after {
-  background: linear-gradient(
-    180deg,
-    rgba(218, 57, 43, 0),
-    rgba(222, 70, 70, 1)
-  );
-}
-#events .card:nth-child(2):hover {
-  box-shadow: 0px 0px 132px 10px rgba(222, 70, 70, 1);
-}
-
-#events .card:nth-child(3)::after {
-  background: linear-gradient(
-    180deg,
-    rgba(218, 57, 43, 0),
-    rgba(113, 45, 253, 1)
-  );
-}
-
-#events .card:nth-child(3):hover {
-  box-shadow: 0px 0px 132px 10px rgba(113, 45, 253, 1);
-}
-
-#events .card:hover:after {
-  opacity: 0;
-}
-
-.card img {
-  height: 100%;
-  width: 100%;
-  transition: 0.4s ease-in-out;
-}
-
-.card:hover img {
-  transform: scale(1.05);
-}
-
-.card .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: white;
-  z-index: 10;
-  transition: 0.3s ease-in-out;
-  padding: 2.5rem 1rem;
-}
-
-.card .overlay h3 {
-  font-size: 1.8rem;
-}
-
-.card .overlay b {
-  font-weight: 500;
-}
-
-.card:hover .overlay {
-  opacity: 0;
-}
-
-/* .card:last-child div {
-  z-index: 10;
-  transition: 0.4s ease-in-out;
-}
-
-.card:last-child:hover div {
-  scale: 1.1;
-} */
-
-.schedule-main-content
-{
-  background-color: #000;
-  border-radius: 20px;
-  padding: 2rem;
-  width: 60%;
-  margin-bottom: 3rem;
-}
-
-.schedule-card
-{
-  background-color: rgb(28, 28, 28);
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  border-radius: 20px;
-}
-
-.schedule-card .date 
-{
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(87, 87, 87);
-  border-radius: 16px;
-  padding: 10px 16px;
-}
-
-.schedule-card .date svg
-{
-  height: 24px;
-  width: 24px;
-}
-
-.schedule-card .date p
-{
-  font-size: 20px;
-  letter-spacing: 0.12em;
+@keyframes open {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100px;
+  }
 }

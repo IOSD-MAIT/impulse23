@@ -1,0 +1,63 @@
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../assets/images/team/background.jpg);
+  background-attachment: fixed;
+  background-size: 110%;
+  background-position: 47% 50%;
+  position: relative;
+}
+.section {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.section h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.card-cont {
+  display: grid;
+  grid-row-gap: 3rem;
+  grid-template-rows: repeat(3, auto);
+  justify-content: space-around;
+  align-items: center;
+}
+
+#council .card-cont {
+  /* grid-template-columns: repeat(4, auto); */
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+#core .card-cont {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card {
+  text-align: center;
+  color: white;
+  /* background-color: rgb(28, 28, 28);
+  border: 1px solid #ffffff26; */
+  padding: 2rem;
+  border-radius: 20px;
+  width: fit-content;
+  justify-self: center;
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(255, 236, 255, 0.101);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.card h3 {
+  color: rgba(255, 255, 255, 0.505);
+}
+
+.card img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 0.5rem;
+}

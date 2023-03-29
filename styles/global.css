@@ -107,3 +107,173 @@ nav button:hover {
   /* background-color: #cb6200; */
   background-color: #ff006f;
 }
+
+.reach-us {
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.reach-us-heading {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2.4rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: rgb(255, 0, 111);
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 10px 10px 25px rgba(255, 0, 111, 0.653),
+    -10px 10px 25px rgba(255, 0, 111, 0.653),
+    -10px -10px 25px rgba(255, 0, 111, 0.653),
+    10px -10px 25px rgba(255, 0, 111, 0.653);
+}
+
+.address h2 {
+  font-size: 1.5rem;
+}
+
+.address h3 {
+  font-size: 1rem;
+  color: #ffffffa5;
+}
+
+.reach-us-container {
+  width: 100%;
+  margin: 2rem 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.map {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-info h3 {
+  font-size: 1.2rem;
+  color: #ffffffa5;
+}
+
+.contact-info h3 a {
+  color: rgba(255, 255, 255, 0.647);
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  background-color: rgba(86, 86, 86, 0.227);
+  backdrop-filter: blur(10px) saturate(200%);
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.social-icon {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.619);
+}
+
+.fa {
+  font-size: 1.4rem;
+}
+.coc {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+  .address h2 {
+    font-size: 1.25rem;
+  }
+  .address h3 {
+    font-size: 1rem;
+  }
+  .contact-info h2 {
+    font-size: 1.25rem;
+  }
+  .contact-info h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .address h2 {
+    font-size: 1rem;
+  }
+  .address h3 {
+    font-size: 0.75rem;
+  }
+  .contact-info h2 {
+    font-size: 1rem;
+  }
+  .contact-info h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 825px) {
+  .address h2 {
+    font-size: 0.75rem;
+  }
+  .address h3 {
+    font-size: 0.6rem;
+  }
+  .contact-info h2 {
+    font-size: 0.75rem;
+  }
+  .contact-info h3 {
+    font-size: 0.6rem;
+  }
+  .reach-us {
+    min-width: 800px;
+  }
+  .social {
+    width: 825px;
+  }
+}
