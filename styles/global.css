@@ -342,7 +342,7 @@ nav .events a:hover + .drop,
 
   .sponsor img {
     max-width: 150px;
-    max-height: 75px;
+    max-height: 150px;
   }
 
   .sponsor p {
@@ -363,7 +363,7 @@ nav .events a:hover + .drop,
 
   .sponsor img {
     max-width: 120px;
-    max-height: 60px;
+    max-height: 120px;
   }
 
   .sponsor p {
