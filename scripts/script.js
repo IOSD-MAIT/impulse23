@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () =>
  */
 function updateTime() {
   const currDate = new Date();
-  const eventDate = new Date("2024-04-15");
+  const eventDate = new Date("2025-03-17");
   const distance = Math.round(eventDate.getTime() - currDate.getTime());
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
