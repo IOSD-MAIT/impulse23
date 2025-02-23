@@ -528,3 +528,31 @@ main .title p {
 #hackmait img {
   object-fit: cover;
 }
+
+
+.carousel-control-prev, 
+.carousel-control-next {
+  background-color: black; /* Make buttons black */
+  width: 4rem; /* Adjust width for better visibility */
+  height: 4rem; /* Adjust height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.8; /* Slight transparency for better aesthetics */
+}
+
+.carousel-control-prev {
+  left: -2rem; /* Adjust positioning if needed */
+}
+
+.carousel-control-next {
+  right: -2rem;
+}
+
+/* Center vertically */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -222,15 +222,15 @@ explore.addEventListener("click", function () {
 
 const hackmait = document.getElementById("hackmait");
 hackmait.addEventListener("click", function () {
-  window.location.href = "./pages/events/hackmait.html";
+  window.location.href = "/pages/events.html#hackmait";
 });
 
 const valo = document.getElementById("valo");
 valo.addEventListener("click", function () {
-  window.location.href = "./pages/events/valo.html";
+  window.location.href = "/pages/events.html#valorent";
 });
 
 const aiml = document.getElementById("aiml");
 aiml.addEventListener("click", function () {
-  window.location.href = "./pages/events/aiml.html";
+  window.location.href = "/pages/events.html#chess";
 });
