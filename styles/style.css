@@ -556,3 +556,10 @@ main .title p {
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+@media (min-width: 512px) {
+  .footermain {
+    margin-top: 18rem !important;
+  }
+}
