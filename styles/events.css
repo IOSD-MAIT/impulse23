@@ -130,6 +130,7 @@ main .title p {
 }
 
 .events-title {
+  margin-top: 4rem;
   font-size: 3rem;
   color: white;
   padding: 1rem 3rem;
